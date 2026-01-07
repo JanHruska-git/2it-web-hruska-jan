@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Hruska | Ninja Dev</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-overlay"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="JAN HRUSKA">JAN HRUSKA</h1>
+            <p class="subtitle">LEVEL 16 | CLASS 2IT | NINJA DEV</p>
+            <div class="scroll-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <div class="section-title">
+                <h2><span class="prefix">></span> O MNĚ</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="card profile-card">
+                <div class="bio-text">
+                    <p>
+                        Ahoj, jsem <span class="highlight">Jan</span>! Je mi 16 let a studuji IT na
+                        <span class="highlight">Mariánské střední škole ve Varnsdorfu</span>.
+                        Můj svět se točí kolem technologií a pohybu. Jsem v ročníku 2IT a mým cílem je ovládnout svět
+                        kódování jako Hokage.
+                    </p>
+                    <p>
+                        Když zrovna nekódím, najdeš mě v gymu, u anime, nebo jak tryhardím na kompu.
+                        Mám za sebou taky 8 let fotbalové kariéry, takže vím, co je to týmová hra.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="label">VĚK</span>
+                        <span class="value">16</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">ŠKOLA</span>
+                        <span class="value">Mariánská SŠ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">TŘÍDA</span>
+                        <span class="value">2IT</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">LOKACE</span>
+                        <span class="value">Varnsdorf</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="container">
+            <div class="section-title">
+                <h2><span class="prefix">></span> SKILLS & HOBBIES</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <div class="icon">💪</div>
+                    <h3>GYM</h3>
+                    <p>Grind never stops. Budování síly a disciplíny.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="icon">🖥️</div>
+                    <h3>PC GAMING</h3>
+                    <p>Competitive gaming. Reflexy a strategie.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="icon">🍥</div>
+                    <h3>ANIME</h3>
+                    <p>Boruto, Naruto a další klasiky. Inspirace pro život.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="icon">⚽</div>
+                    <h3>FOTBAL</h3>
+                    <p>8 let zkušeností na hřišti. Týmový duch.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jan Hruska. Built with <span class="heart">⚡</span> in Varnsdorf.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to add random glitch effects
+        const glitchText = document.querySelector('.glitch');
+        setInterval(() => {
+            glitchText.style.transform = `translate(${Math.random() * 4 - 2}px, ${Math.random() * 4 - 2}px)`;
+            setTimeout(() => {
+                glitchText.style.transform = 'translate(0, 0)';
+            }, 50);
+        }, 2000);
+    </script>
+</body>
+
+</html>
